@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+--bgcolor:hsl(218, 18%, 24%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color:white;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--VeryDarkBlue);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Rating{
+    max-width: 400px;
+    min-height: 360px;
+    background-color: var(--DarkBlue);
+    border-radius: 25px;
+    padding: 10px;
+}
+.star{
+    margin: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    background:var(--bgcolor)
+}
+
+.Rating h2{
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+.Rating p{
+    line-height: 1.4;
+    margin: 20px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--LightGrey);
+}
+
+
+.ratings{
+    list-style: none;
+    display: flex; 
+    justify-content: space-between;
+    margin: 20px;
+     margin-bottom: 25px;
+    
+}
+.number button{
+    border: none;
+    color: var(--LightGrey);
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 12px 17px;
+    background: var(--bgcolor);
+}
+
+.number button:hover{
+    background: var(--LightGrey);
+    color: var(--White);
+
+}
+
+.submit_button{
+    display: inline-block;
+    margin-left: 15px;
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: var(--Orange);
+    color: var(--White);
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Overpass';
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+   
+}
+.submit_button:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.selected{
+    background: var(--Orange) !important;
+    color: var(--White) !important;
+}
+.hidden{
+    display: none !important;
+}
+
+
+.Thankyou{
+    max-width: 400px;
+    min-height: 360px;
+    background-color: var(--DarkBlue);
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Thankyou img{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.submittedRating  {
+    color: var(--Orange) !important;
+    margin: 30px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    letter-spacing: 1.7px;
+    background-color: var(--bgcolor);
+    font-size: 15px;
+}
+
+
+.note{
+    line-height: 1.4;
+    margin: 15px 20px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--LightGrey);
+    text-align: center;
+    font-size: 15px;
+}
